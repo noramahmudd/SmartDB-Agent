@@ -1,4 +1,4 @@
-<img width="1536" height="1024" alt="ChatGPT Image Feb 4, 2026, 08_08_56 AM" src="https://github.com/user-attachments/assets/f27519c0-ea9a-4e8e-9da2-06922cd0afe2" /><img width="1536" height="1024" alt="ChatGPT Image Feb 4, 2026, 08_08_56 AM" src="https://github.com/user-attachments/assets/f27519c0-ea9a-4e8e-9da2-06922cd0afe2" />
+<img width="1536" height="1024" alt="ChatGPT Image Feb 4, 2026, 08_08_56 AM" src="https://github.com/user-attachments/assets/f27519c0-ea9a-4e8e-9da2-06922cd0afe2" />
 # 🧠 QueryMind AI — Intelligent Multi-Database SQL Agent
 
 **QueryMind AI** is an AI-powered data assistant that lets users **talk to their databases in plain English** and receive **real SQL queries, live results, explanations, and automatic visualizations**.
@@ -156,3 +156,4 @@ It behaves like a real AI Data Agent that can:
 
 Nourhan Mahmoud
 AI Engineer | LLMs • Agents • Computer Vision
+
