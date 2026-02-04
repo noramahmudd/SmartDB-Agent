@@ -113,10 +113,12 @@ pip install -r requirements.txt
 
 Create a .env file:
 GROQ_API_KEY=your_key_here
+---
 
 ▶ Run the App
 streamlit run nl2sql.py
 
+---
 💬 Example Questions
 
 “Show total sales by product”
@@ -126,7 +128,7 @@ streamlit run nl2sql.py
 “Average revenue per month”
 
 “How many users signed up this year?”
-
+---
 🔒 Safety Features
 
 The system blocks harmful SQL such as:
@@ -140,6 +142,7 @@ ALTER DATABASE
 TRUNCATE
 
 This protects your database from destructive operations.
+---
 
 🎯 Why This Project Is Powerful
 
@@ -152,9 +155,11 @@ It behaves like a real AI Data Agent that can:
 ✔ Visualize results
 ✔ Work with multiple databases
 
+---
 👩‍💻 Author
 
 Nourhan Mahmoud
 AI Engineer | LLMs • Agents • Computer Vision
+
 
 
