@@ -108,7 +108,7 @@ python -m venv venv
 venv\Scripts\activate
 
 pip install -r requirements.txt
-
+```
 🔑 Environment Variables
 
 Create a .env file:
@@ -156,4 +156,5 @@ It behaves like a real AI Data Agent that can:
 
 Nourhan Mahmoud
 AI Engineer | LLMs • Agents • Computer Vision
+
 
