@@ -1,86 +1,106 @@
+<img width="1536" height="1024" alt="ChatGPT Image Feb 4, 2026, 08_08_56 AM" src="https://github.com/user-attachments/assets/f27519c0-ea9a-4e8e-9da2-06922cd0afe2" /><img width="1536" height="1024" alt="ChatGPT Image Feb 4, 2026, 08_08_56 AM" src="https://github.com/user-attachments/assets/f27519c0-ea9a-4e8e-9da2-06922cd0afe2" />
+# 🧠 QueryMind AI — Intelligent Multi-Database SQL Agent
 
-![Uploading ChatGPT Image Feb 4, 2026, 08_08_56 AM.png…]()  
+**QueryMind AI** is an AI-powered data assistant that lets users **talk to their databases in plain English** and receive **real SQL queries, live results, explanations, and automatic visualizations**.
 
-🧠 QueryMind AI — Intelligent Multi-Database SQL Agent
+It combines **LLMs + Databases + Data Visualization** into one intelligent system.
 
-QueryMind AI is an AI-powered data assistant that allows users to talk to their database in plain English and get real SQL queries, results, explanations, and charts — instantly.
+---
 
-It combines LLMs + Databases + Visualization into one intelligent system.
-
-🚀 What This Project Does
+## 🚀 What This Project Does
 
 You can:
 
-✔ Ask questions about your database in plain English
-✔ Automatically generate SQL queries using an LLM
-✔ Execute queries in real time
-✔ Get results as tables
-✔ See automatic charts based on the data
-✔ Get AI explanations of the SQL query
-✔ Create tables or insert data manually
-✔ Download the entire conversation
-✔ Work with multiple database types
+✔ Ask questions about your database in natural language  
+✔ Automatically generate SQL queries using an LLM  
+✔ Execute queries in real time  
+✔ View results as structured tables  
+✔ Get automatic charts from query results  
+✔ Receive AI explanations of the generated SQL  
+✔ Create tables or insert data manually  
+✔ Download the full conversation history  
+✔ Connect to multiple database types  
 
-🧩 Supported Data Sources
-Type	Status
-SQLite	✅
-MySQL	✅
-PostgreSQL	✅
-CSV Files	✅
-🏗️ System Architecture
+---
 
-User → Streamlit UI → LLM (Groq) → SQL Generator
-→ Safety Check → Database Engine → Results
-→ Auto Charts → SQL Explanation → Chat Memory
+## 🧩 Supported Data Sources
 
-This makes the system behave like an AI Data Agent, not just a chatbot.
+| Data Source | Supported |
+|------------|-----------|
+| SQLite | ✅ |
+| MySQL | ✅ |
+| PostgreSQL | ✅ |
+| CSV Files | ✅ |
 
-🧠 AI Capabilities
+---
 
-Natural Language → SQL conversion
+## 🏗️ System Architecture
 
-Context-aware conversations (memory)
+**User → Streamlit UI → LLM (Groq) → SQL Generator → Safety Check → Database Engine → Results → Auto Charts → SQL Explanation → Memory**
 
-SQL safety filtering (prevents dangerous queries)
+This allows the system to behave like an **AI Data Agent**, not just a chatbot.
 
-Query explanation in plain English
+---
 
-Automatic chart generation from results
+## 🧠 AI Capabilities
 
-📊 Auto Visualization
+- Natural Language → SQL conversion  
+- Context-aware conversation memory  
+- SQL safety filtering (blocks dangerous queries)  
+- Plain-English SQL explanations  
+- Automatic chart selection from results  
 
-QueryMind automatically chooses the best chart:
+---
 
-Data Type	Chart
-Category + Number	Bar Chart
-Date + Number	Line Chart
-2 Numbers	Scatter Plot
-Single Number Column	Histogram
-🛠 Tech Stack
-Layer	Technology
-UI	Streamlit
-LLM	Groq (LLaMA 3.1 8B)
-AI Framework	LangChain
-Databases	SQLite, MySQL, PostgreSQL
-Data Handling	Pandas
-Charts	Matplotlib
-Agent Logic	Custom modules
-📁 Project Structure
+## 📊 Auto Visualization
+
+QueryMind selects charts automatically:
+
+| Data Pattern | Chart Type |
+|-------------|------------|
+| Category + Numeric | Bar Chart |
+| Date + Numeric | Line Chart |
+| Two Numeric Columns | Scatter Plot |
+| One Numeric Column | Histogram |
+
+---
+
+## 🛠 Tech Stack
+
+| Layer | Technology |
+|------|------------|
+| UI | Streamlit |
+| LLM | Groq (LLaMA 3.1 8B) |
+| Framework | LangChain |
+| Databases | SQLite, MySQL, PostgreSQL |
+| Data Processing | Pandas |
+| Charts | Matplotlib |
+| Agent Logic | Custom Python Modules |
+
+---
+
+## 📁 Project Structure
+
 project/
 │
-├── nl2sql.py              # Main Streamlit app
+├── nl2sql.py # Main Streamlit application
 ├── module/
-│   ├── config.py          # API keys & settings
-│   ├── query_engine.py    # LLM → SQL generation
-│   ├── sql_utils.py       # Multi-DB execution
-│   ├── safety.py          # SQL protection
-│   ├── memory.py          # Conversation memory
-│   ├── explain.py         # SQL explanation
-│   ├── download_utils.py  # Chat export
+│ ├── config.py # API keys & settings
+│ ├── query_engine.py # LLM → SQL generation
+│ ├── sql_utils.py # Multi-database execution
+│ ├── safety.py # Query protection layer
+│ ├── memory.py # Conversation memory
+│ ├── explain.py # SQL explanation engine
+│ ├── download_utils.py # Chat export functionality
 │
 └── requirements.txt
 
-⚙️ Installation
+
+---
+
+## ⚙️ Installation
+
+```bash
 git clone https://github.com/YOUR_USERNAME/querymind-ai.git
 cd querymind-ai
 
@@ -92,67 +112,47 @@ pip install -r requirements.txt
 🔑 Environment Variables
 
 Create a .env file:
-
 GROQ_API_KEY=your_key_here
 
 ▶ Run the App
 streamlit run nl2sql.py
 
-💬 Example Questions You Can Ask
+💬 Example Questions
 
-"Show total sales by product"
+“Show total sales by product”
 
-"Who are the top 5 students by score?"
+“Who are the top 5 students by score?”
 
-"Average revenue per month"
+“Average revenue per month”
 
-"How many users signed up this year?"
+“How many users signed up this year?”
 
 🔒 Safety Features
 
-The system blocks dangerous queries like:
+The system blocks harmful SQL such as:
 
 DROP TABLE
 
-DELETE without WHERE
+DELETE FROM
 
-System-level operations
+ALTER DATABASE
 
-🧠 Is This a RAG System?
+TRUNCATE
 
-No.
-This is an AI Agent that works on structured databases, not document retrieval.
+This protects your database from destructive operations.
 
-It uses:
+🎯 Why This Project Is Powerful
 
-Schema awareness
+This is not just text-to-SQL.
+It behaves like a real AI Data Agent that can:
 
-SQL reasoning
-
-Memory
-
-Tool usage
-
-Which makes it closer to a Database AI Agent than RAG.
-
-🌟 Future Improvements
-
-Dashboard mode
-
-Role-based access control
-
-Query optimization hints
-
-Voice-to-SQL
-
-Cloud deployment
+✔ Understand context
+✔ Generate accurate queries
+✔ Explain its logic
+✔ Visualize results
+✔ Work with multiple databases
 
 👩‍💻 Author
 
 Nourhan Mahmoud
-AI Engineer | LLMs | Computer Vision | ML Systems
-
-🏁 Why This Project Matters
-
-Most AI apps stop at chat.
-QueryMind AI takes action, understands data, and becomes an intelligent database assistant.
+AI Engineer | LLMs • Agents • Computer Vision
