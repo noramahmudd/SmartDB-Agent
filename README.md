@@ -33,7 +33,6 @@ You can:
 | CSV Files | ✅ |
 
 ---
-
 ## 🏗️ System Architecture
 
 **User → Streamlit UI → LLM (Groq) → SQL Generator → Safety Check → Database Engine → Results → Auto Charts → SQL Explanation → Memory**
@@ -78,7 +77,6 @@ QueryMind selects charts automatically:
 | Agent Logic | Custom Python Modules |
 
 ---
-
 ## 📁 Project Structure
 
 project/
@@ -94,8 +92,6 @@ project/
 │ ├── download_utils.py # Chat export functionality
 │
 └── requirements.txt
-
-
 ---
 
 ## ⚙️ Installation
@@ -114,10 +110,8 @@ pip install -r requirements.txt
 Create a .env file:
 GROQ_API_KEY=your_key_here
 ---
-
 ▶ Run the App
 streamlit run nl2sql.py
-
 ---
 💬 Example Questions
 
@@ -143,7 +137,6 @@ TRUNCATE
 
 This protects your database from destructive operations.
 ---
-
 🎯 Why This Project Is Powerful
 
 This is not just text-to-SQL.
@@ -154,12 +147,12 @@ It behaves like a real AI Data Agent that can:
 ✔ Explain its logic
 ✔ Visualize results
 ✔ Work with multiple databases
-
 ---
 👩‍💻 Author
 
 Nourhan Mahmoud
 AI Engineer | LLMs • Agents • Computer Vision
+
 
 
 
