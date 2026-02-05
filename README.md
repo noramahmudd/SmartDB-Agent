@@ -86,10 +86,15 @@ QueryMind selects charts automatically:
 project/
 │
 ├── nl2sql.py # Main Streamlit application
+
 ├── module/
+
 │ ├── config.py # API keys & settings
+
 │ ├── query_engine.py # LLM → SQL generation
+
 │ ├── sql_utils.py # Multi-database execution
+
 │ ├── safety.py # Query protection layer
 │ ├── memory.py # Conversation memory
 │ ├── explain.py # SQL explanation engine
@@ -165,4 +170,5 @@ It behaves like a real AI Data Agent that can:
 
 Nourhan Mahmoud
 AI Engineer | LLMs • Agents • Computer Vision
+
 
