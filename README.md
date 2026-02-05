@@ -1,8 +1,7 @@
 <img width="1536" height="1024" alt="ChatGPT Image Feb 4, 2026, 08_08_56 AM" src="https://github.com/user-attachments/assets/f27519c0-ea9a-4e8e-9da2-06922cd0afe2" />
 # 🧠 QueryMind AI — Intelligent Multi-Database SQL Agent
 
-**QueryMind AI** 
-is an AI-powered data assistant that lets users **talk to their databases in plain English** and receive **real SQL queries, live results, explanations, and automatic visualizations**.
+**QueryMind AI** is an AI-powered data assistant that lets users **talk to their databases in plain English** and receive **real SQL queries, live results, explanations, and automatic visualizations**.
 
 It combines **LLMs + Databases + Data Visualization** into one intelligent system.
 
@@ -34,6 +33,7 @@ You can:
 | CSV Files | ✅ |
 
 ---
+
 ## 🏗️ System Architecture
 
 **User → Streamlit UI → LLM (Groq) → SQL Generator → Safety Check → Database Engine → Results → Auto Charts → SQL Explanation → Memory**
@@ -78,6 +78,7 @@ QueryMind selects charts automatically:
 | Agent Logic | Custom Python Modules |
 
 ---
+
 ## 📁 Project Structure
 
 project/
@@ -93,6 +94,7 @@ project/
 │ ├── download_utils.py # Chat export functionality
 │
 └── requirements.txt
+
 ---
 
 ## ⚙️ Installation
@@ -106,9 +108,11 @@ venv\Scripts\activate
 
 pip install -r requirements.txt
 ```
+---
 🔑 Environment Variables
 
 Create a .env file:
+
 GROQ_API_KEY=your_key_here
 ---
 ▶ Run the App
@@ -117,11 +121,8 @@ streamlit run nl2sql.py
 💬 Example Questions
 
 “Show total sales by product”
-
 “Who are the top 5 students by score?”
-
 “Average revenue per month”
-
 “How many users signed up this year?”
 ---
 🔒 Safety Features
@@ -129,11 +130,8 @@ streamlit run nl2sql.py
 The system blocks harmful SQL such as:
 
 DROP TABLE
-
 DELETE FROM
-
 ALTER DATABASE
-
 TRUNCATE
 
 This protects your database from destructive operations.
@@ -153,7 +151,3 @@ It behaves like a real AI Data Agent that can:
 
 Nourhan Mahmoud
 AI Engineer | LLMs • Agents • Computer Vision
-
-
-
-
