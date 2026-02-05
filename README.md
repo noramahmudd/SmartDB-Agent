@@ -96,8 +96,11 @@ project/
 │ ├── sql_utils.py # Multi-database execution
 
 │ ├── safety.py # Query protection layer
+
 │ ├── memory.py # Conversation memory
+
 │ ├── explain.py # SQL explanation engine
+
 │ ├── download_utils.py # Chat export functionality
 │
 └── requirements.txt
@@ -170,5 +173,6 @@ It behaves like a real AI Data Agent that can:
 
 Nourhan Mahmoud
 AI Engineer | LLMs • Agents • Computer Vision
+
 
 
