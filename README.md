@@ -1,4 +1,5 @@
 <img width="1536" height="1024" alt="ChatGPT Image Feb 4, 2026, 08_08_56 AM" src="https://github.com/user-attachments/assets/f27519c0-ea9a-4e8e-9da2-06922cd0afe2" />
+
 # 🧠 QueryMind AI — Intelligent Multi-Database SQL Agent
 
 **QueryMind AI** is an AI-powered data assistant that lets users **talk to their databases in plain English** and receive **real SQL queries, live results, explanations, and automatic visualizations**.
@@ -81,6 +82,7 @@ QueryMind selects charts automatically:
 
 ## 📁 Project Structure
 
+
 project/
 │
 ├── nl2sql.py # Main Streamlit application
@@ -94,6 +96,7 @@ project/
 │ ├── download_utils.py # Chat export functionality
 │
 └── requirements.txt
+
 
 ---
 
@@ -121,17 +124,24 @@ streamlit run nl2sql.py
 💬 Example Questions
 
 “Show total sales by product”
+
 “Who are the top 5 students by score?”
+
 “Average revenue per month”
+
 “How many users signed up this year?”
+
 ---
 🔒 Safety Features
 
 The system blocks harmful SQL such as:
 
 DROP TABLE
+
 DELETE FROM
+
 ALTER DATABASE
+
 TRUNCATE
 
 This protects your database from destructive operations.
@@ -142,12 +152,17 @@ This is not just text-to-SQL.
 It behaves like a real AI Data Agent that can:
 
 ✔ Understand context
+
 ✔ Generate accurate queries
+
 ✔ Explain its logic
+
 ✔ Visualize results
+
 ✔ Work with multiple databases
 ---
 👩‍💻 Author
 
 Nourhan Mahmoud
 AI Engineer | LLMs • Agents • Computer Vision
+
