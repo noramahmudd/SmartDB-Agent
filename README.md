@@ -85,6 +85,7 @@ QueryMind selects charts automatically:
 
 project/
 │
+
 ├── nl2sql.py # Main Streamlit application
 
 ├── module/
@@ -174,6 +175,7 @@ It behaves like a real AI Data Agent that can:
 
 Nourhan Mahmoud
 AI Engineer | LLMs • Agents • Computer Vision
+
 
 
 
